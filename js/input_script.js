@@ -127,7 +127,7 @@ function sendImageToBackend(imageUrl) {
         }
     });
 
-    fetch('https://3.84.87.63:8000/predict', {
+    fetch('https://3.81.37.192:8000/predict', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

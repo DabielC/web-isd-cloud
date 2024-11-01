@@ -75,7 +75,7 @@ window.onload = function() {
     
     //รับข้อมูลภาพที่user input มาผ่าน get
     function fetchImage(itemId) {
-        fetch(`https://3.84.87.63:8000/get_image/${itemId}`)
+        fetch(`https://3.81.37.192:8000/get_image/${itemId}`)
             .then(response => response.json())
             .then(imageData => {
                 console.log(imageData)
@@ -127,7 +127,7 @@ window.onload = function() {
 // ฟังก์ชันสำหรับอัพเดตสถานะ Like/Dislike แล้วส่งไป API
 function updateReflectionLike(id, likeStatus) {
     event.preventDefault();
-    fetch('https://3.84.87.63:8000/update_reflection_like', {
+    fetch('https://3.81.37.192/update_reflection_like', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -154,7 +154,7 @@ function updateReflectionLike(id, likeStatus) {
 // ฟังก์ชันสำหรับอัพเดต comment แล้วส่งไป API
 function updateReflectionComment(id, comment) {
     event.preventDefault();
-    fetch('https://3.84.87.63:8000/update_reflection_comment', {
+    fetch('https://3.81.37.192:8000/update_reflection_comment', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
