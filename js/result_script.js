@@ -75,7 +75,7 @@ window.onload = function() {
     
     //รับข้อมูลภาพที่user input มาผ่าน get
     function fetchImage(itemId) {
-        fetch(`https://3.88.146.173/get_image/${itemId}`)
+        fetch(`https://3.88.146.173:8000/get_image/${itemId}`)
             .then(response => response.json())
             .then(imageData => {
                 console.log(imageData)
